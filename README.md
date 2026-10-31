@@ -3,7 +3,7 @@
 Website CV/portofolio responsif untuk Rendy Novian Wijaksono, mahasiswa Teknik Informatika
 Universitas Muhammadiyah Malang.
 
-**Demo:** https://USERNAME.github.io/NAMA-REPO *(ganti dengan link kamu)*
+**Demo:** https://github.com/Rennn77/cv-rendy--1-
 
 ## Teknologi
 | Bahasa | Dipakai untuk |
