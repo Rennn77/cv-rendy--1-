@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rendy Novian Wijaksono – Mahasiswa Teknik Informatika</title>
+<meta name="description" content="CV online Rendy Novian Wijaksono, mahasiswa Teknik Informatika Universitas Muhammadiyah Malang.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <img class="foto" src="foto.jpg" alt="Foto Rendy Novian Wijaksono">
+
+    <section aria-labelledby="h-kontak">
+      <h2 id="h-kontak">Kontak</h2>
+      <dl class="kontak">
+        <dt>Email</dt>
+        <dd><a href="mailto:rendinovian031@gmail.com">rendinovian031@gmail.com</a></dd>
+        <dt>Telepon</dt>
+        <dd><a href="tel:+6281343440462">+62 813-4344-0462</a></dd>
+        <dt>Instagram</dt>
+        <dd><a href="https://instagram.com/rendyyy_.07" target="_blank" rel="noopener">@rendyyy_.07</a></dd>
+      </dl>
+      <button id="salin" class="btn" type="button">Salin email</button>
+    </section>
+
+    <section aria-labelledby="h-skill">
+      <h2 id="h-skill">Keterampilan</h2>
+      <ul id="skill-list" class="titik"></ul>
+    </section>
+
+    <section aria-labelledby="h-sertif">
+      <h2 id="h-sertif">Sertifikat &amp; Pelatihan</h2>
+      <ul class="titik">
+        <li>Sertifikasi Kepanitiaan INFORSION 2026</li>
+        <li>Sertifikasi P2KK</li>
+      </ul>
+    </section>
+  </aside>
+
+  <main class="konten">
+    <button id="tema" class="btn tema" type="button" aria-label="Ganti tema terang atau gelap">Ganti tema</button>
+    <header>
+      <h1>Rendy Novian Wijaksono</h1>
+      <p class="peran">Mahasiswa Teknik Informatika</p>
+    </header>
+
+    <section aria-labelledby="h-profil">
+      <h2 id="h-profil" class="judul">Profil</h2>
+      <p>Mahasiswa aktif Program Studi Teknik Informatika yang berkomitmen mengembangkan kompetensi diri melalui kegiatan akademik maupun organisasi. Memiliki kemampuan komunikasi yang baik, mudah beradaptasi, serta mampu bekerja kolaboratif dalam tim. Menjunjung tinggi disiplin, tanggung jawab, dan profesionalisme dalam menjalankan setiap amanah. Dengan pengalaman berorganisasi dan kepanitiaan, siap memberikan kontribusi terbaik bagi perusahaan atau instansi tempat magang maupun bekerja.</p>
+    </section>
+
+    <section aria-labelledby="h-pendidikan">
+      <h2 id="h-pendidikan" class="judul">Riwayat Pendidikan</h2>
+      <article class="item">
+        <div class="baris"><h3>Universitas Muhammadiyah Malang</h3><span class="tahun">2024 – Sekarang</span></div>
+        <p>S1 Teknik Informatika</p>
+      </article>
+      <article class="item">
+        <div class="baris"><h3>SMA Negeri 1 Bintuni</h3><span class="tahun">2021 – 2024</span></div>
+        <p>Jurusan MIPA</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="h-org">
+      <h2 id="h-org" class="judul">Pengalaman Organisasi</h2>
+      <article class="item">
+        <div class="baris"><h3>Liaison Officer (LO)</h3><span class="tahun">2025</span></div>
+        <p>Volunteer Kepanitiaan INFORSION, Fakultas Teknik Informatika</p>
+        <ul class="poin">
+          <li>Mengurus kebutuhan dan kelancaran kegiatan peserta.</li>
+          <li>Menyampaikan informasi kepada mahasiswa baru Informatika.</li>
+          <li>Mendampingi mahasiswa baru dari awal hingga akhir kegiatan.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="h-proyek">
+      <h2 id="h-proyek" class="judul">Proyek</h2>
+      <article class="item">
+        <div class="baris"><h3>Kalkulator IPK</h3><span class="tahun">Python &amp; JavaScript</span></div>
+        <p>Versi Python (terminal) ada di folder <code>python/</code> repository GitHub. Versi JavaScript bisa dicoba langsung di bawah ini.</p>
+        <div class="kalkulator">
+          <div id="daftar-mk"></div>
+          <div class="aksi">
+            <button id="tambah-mk" class="btn" type="button">Tambah mata kuliah</button>
+            <button id="hitung-ipk" class="btn btn-isi" type="button">Hitung IPK</button>
+          </div>
+          <p id="hasil-ipk" role="status"></p>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="h-hubungi">
+      <h2 id="h-hubungi" class="judul">Hubungi Saya</h2>
+      <form id="form" novalidate>
+        <label for="nama">Nama</label>
+        <input id="nama" name="nama" type="text" autocomplete="name">
+        <small class="error" data-for="nama"></small>
+
+        <label for="email">Email Anda</label>
+        <input id="email" name="email" type="email" autocomplete="email">
+        <small class="error" data-for="email"></small>
+
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="4"></textarea>
+        <small class="error" data-for="pesan"></small>
+
+        <button class="btn btn-isi" type="submit">Kirim lewat email</button>
+        <p id="status" role="status"></p>
+      </form>
+    </section>
+
+    <footer>© <span id="tahun"></span> Rendy Novian Wijaksono</footer>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
